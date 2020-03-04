@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ryotaのポートフォリオ</title>
+  <link rel="stylesheet" href="stylesheet_portfolio.css">
+  <!-- <link rel="text/javascript" href="/css/stylesheet.js"> -->
+  <script src="https://kit.fontawesome.com/63bee99ef6.js"></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="header-lists">
+        <li class="header-list"><a class="header-link" href="#top">Top</a></li>
+        <li class="header-list"><a class="header-link" href="#profile">Profile</a></li>
+        <li class="header-list"><a class="header-link" href="#comment">Comment</a></li>
+        <li class="header-list"><a class="header-link" href="#sns">SNS</a></li>
+        <li class="header-list"><a class="header-link" href="#inquiry">Inquiry</a></li>
+      </ul>
+    </nav>
+    
+    
+    
+  </header>
+
+  <div class="main-page" name="top" id="top">
+    <h1 class="heading">Ryota とは？</h1>
+  </div>
+
+  <div class="profile" id="profile">
+    <div class="container">
+      <div class="title">
+        <div class="title-left"></div>
+        <div class="title-right">
+          <h1 class="title-heading">Profile</h1>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <img class="myself" src="img/4.jpg">
+      <ul class="informations">
+        <li>
+          <div class="information">
+            <h1 class="item">NAME</h1>
+            <p class="answer">Ryota</p>
+          </div>
+        </li>
+        <li>
+          <div class="information">
+            <h1 class="item">COLLEGE</h1>
+            <p class="answer">OSAKA</p>
+            <div class="clear"></div>
+          </div>
+        </li>
+        <li>
+          <div class="information">
+            <h1 class="item">BIRTHDAY</h1>
+            <p class="answer">July, 12th,1997</p>
+          </div>
+        </li>
+        <li>
+          <div class="information">
+            <h1 class="item">ADDRESS</h1>
+            <p class="answer"> TOYONAKA </p>
+          </div>
+        </li>
+        <li>
+          <div class="information">
+            <h1 class="item">HOBBY</h1>
+            <p class="answer">FOOTBALL</p>
+          </div>
+        </li>
+      </ul>
+      <div class="clear"></div>
+      <div class="animation-wrapper">
+        <img class=animation id='mypic' src="img/5.jpg">
+        <script type="text/javascript">
+          var pics_src = new Array("img/5.jpg", "img/2.jpg", "img/3.jpg", "img/1.jpg");
+          var num = -1;
+          slideshow_timer();
+          function slideshow_timer(){
+            if(num==3){
+              num = 0;
+            }
+            else {
+              num++;
+            }
+            document.getElementById('mypic').src=pics_src[num];
+            setTimeout("slideshow_timer()", 3000);
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <div class="comment" id="comment">
+    <div class="container">
+      <div class="title">
+        <div class="title-left"></div>
+        <div class="title-right">
+          <h1 class="title-heading">COMMENT</h1>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="center">
+        <div class="comment-wrapper">
+          <h1 class="comment-title">完全燃焼</h1>
+          <p>僕は、部活・受験・サークル・バイトとやり切ったと完全燃焼してきました。これからの人生プログラミングを極めて、何か大きなプロジェクトをやり切ったと思えるまで頑張りたい。
+          </p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="comment-wrapper">
+          <h1 class="comment-title">論理的思考力</h1>
+          <p>数学必修科目すべて最高成績を収めた。この過程で身に着けた、知識を組み合わせて答えを導く力をプログラミングでも生かせると感じている。
+          </p>
+        </div>
+      </div>
+      <div class="center">
+        <div class="comment-wrapper">
+          <h1 class="comment-title">計画力</h1>
+          <p>何かを達成するとき、やるべき事は決まっている。そのやるべき事を明確にして、達成したい日から逆算して一日一日何をやるか細かく決める。あとは、それは確実にこなすだけでよい。細かく計画をたてることはとても大切だ。
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sns" id="sns">
+    <div class="container">
+      <div class="title">
+        <div class="title-left"></div>
+        <div class="title-right">
+          <h1 class="title-heading">SNS</h1>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="icon">
+        <h1 class="icon-name">facebook</h1>
+        <img class="icon-image" src="img/f.jpg">
+        <div class="click">
+          <a class="icon-link" href="https://twitter.com/xion470" target="_blank">Click here.</a>
+        </div>
+      </div>
+      <div class="icon">
+        <h1 class="icon-name">twitter</h1>
+        <img class="icon-image" src="img/i.jpg">
+        <div class="click">
+          <a class="icon-link" href="https://twitter.com/xion470" target="_blank">Click here.</a>
+        </div>
+      </div>
+      <div class="icon">
+        <h1 class="icon-name">instagram</h1>
+        <img class="icon-image" src="img/t .jpg">
+        <div class="click">
+          <a class="icon-link" href="https://twitter.com/xion470" target="_blank">Click here.</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container" id=inquiry>
+      <div class="title">
+        <div class="title-left"></div>
+        <div class="title-right">
+          <h1 class="title-heading">INQUIRY</h1>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="inquiries">
+        <div class="box1">
+          <h1 class="detail">name :</h1>
+          <div class="clear-right"></div>
+        </div>
+        <div class="box2">
+          <input class="reply" type="text" name="yourname" placeholder="PROGRAMING TAROU">
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="inquiries">
+        <div class="box1">
+          <h1 class="detail">E-mail :</h1>
+          <div class="clear-right"></div>
+        </div>
+        <div class="box2">
+          <input class="reply" type="email" name="email" placeholder="POGRAMING@gmail.com">
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="inquiries">
+        <div class="box1">
+          <h1 class="detail">phone :</h1>
+          <div class="clear-right"></div>
+        </div>
+        <div class="box2">
+          <input class="reply" type="tel" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" placeholder="090-####-###">
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="inquiries">
+        <div class="box1">
+          <h1 class="detail">contents :</h1>
+          <div class="clear-right"></div>
+        </div>
+        <div class="box3">
+          <textarea placeholder="Please write here." rows="4"></textarea>
+          <div class="clear"></div>
+        </div>
+      </div>
+      <div class="center">
+        <input class=submit-btn type="submit" value="submit">
+      </div>
+    </div>
+
+    <p>(c)dotinstall.com</p>
+  </footer>
+</body>
+</html>
